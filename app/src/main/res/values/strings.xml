@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Simple Login</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Cadastro</string>
+    <string name="login_Email">Digite seu email</string>
+    <string name="name">Nome</string>
+    <string name="sex">Sexo</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirmar senha</string>
+    <string name="save">Salvar</string>
+    <string name="login_password">Digite sua senha</string>
+
+    <string-array name="sex_array">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+</resources>

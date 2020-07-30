@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="124dp"
+        android:gravity="center_vertical"
+        android:text="@string/log_in"
+        android:textAppearance="@style/log_in"
+        app:fontFamily="@font/comfortaa_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailUser"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:hint="@string/login_Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_in" />
+
+    <EditText
+        android:id="@+id/passwordUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="@string/login_password"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailUser" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/log_in"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:onClick="login"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordUser" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:onClick="goToRegisterActivity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
